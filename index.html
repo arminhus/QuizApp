@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>5th Grade Quick Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+
+<body role="document">
+    <main class='main' role="main">
+        <header class="header" role="banner">
+            <p class='header-title'>5th Grade Quick Study</p>
+        </header>
+        <section class="start-quiz-btn" id="start-btn-container">
+            <button id="start-btn" role="button">Start!</button>
+        </section>
+        <section class="question-card" role="region">
+            <form class="question-container" role="form">
+                <div class="form-header" role="region">
+                    <h3 id="display-header"></h3>
+                    <h3 id='question'>Question</h3>
+                </div>
+                <div class='form-content' role="radiogroup">
+                    <div id='answerFeedback' role="region"></div>
+                    <label class='choice-box' role="aria-label">
+                        <input type='radio' id='choice1-input' name='choice' value='a' role="radio">
+                        <span id="choice1">answer choice</span>
+                    </label>
+                    <label class='choice-box' role="aria-label">
+                        <input type='radio' id='choice2-input' name='choice' value='b' role="radio">
+                        <span id="choice2">answer choice</span>
+                    </label>
+                    <label class='choice-box' role="aria-label">
+                        <input type='radio' id='choice3-input' name='choice' value='c' role="radio">
+                        <span id="choice3">answer choice</span>
+                    </label>
+                    <label class='choice-box' role="aria-label">
+                        <input type='radio' id='choice4-input' name='choice' value='d' role="radio">
+                        <span id="choice4">answer choice</span>
+                    </label>
+                </div>
+                <div class="form-footer" role="contentinfo">
+                    <h3 id="display-count"></h3>
+                    <input id='submit-btn' type="button" value="Submit" role="button">
+                </div>
+            </form>
+        </section>
+        <section class="score-card" role="region">
+            <form>
+                <h1 id='displayed-score'></h1>
+                <input id='restart-btn' type='submit' value='restart' role="button">
+            </form>
+        </section>
+    </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</html>
